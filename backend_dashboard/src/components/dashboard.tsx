@@ -86,7 +86,7 @@ export default function Component() {
   )
 }
 
-function HomeIcon(props) {
+function HomeIcon(props:any) {
   return (
     <svg
       {...props}
@@ -107,7 +107,7 @@ function HomeIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props:any) {
   return (
     <svg
       {...props}
@@ -127,7 +127,7 @@ function MountainIcon(props) {
 }
 
 
-function PackageIcon(props) {
+function PackageIcon(props:any) {
   return (
     <svg
       {...props}
@@ -150,7 +150,7 @@ function PackageIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props:any) {
   return (
     <svg
       {...props}
@@ -171,7 +171,7 @@ function SettingsIcon(props) {
 }
 
 
-function ShoppingCartIcon(props) {
+function ShoppingCartIcon(props:any) {
   return (
     <svg
       {...props}
@@ -193,7 +193,7 @@ function ShoppingCartIcon(props) {
 }
 
 
-function UsersIcon(props) {
+function UsersIcon(props:any) {
   return (
     <svg
       {...props}
