@@ -5,6 +5,7 @@
  */
 import Link from "next/link"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
+import GetData from "./fetchdata"
 
 export default function Component() {
   return (
@@ -14,7 +15,7 @@ export default function Component() {
           <MountainIcon className="h-6 w-6 text-white" />
           <span className="text-lg font-semibold text-white">Acme Inc</span>
         </Link>
-        <nav className="ml-auto flex items-center gap-4">
+        <nav className="ml-auto flexr items-center gap-4">
           <Link className="text-sm font-medium text-gray-300 hover:text-white" href="#">
             Dashboard
           </Link>
@@ -75,101 +76,9 @@ export default function Component() {
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card>
-              <CardHeader>
-                <CardTitle>Total Revenue</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-4xl font-bold text-green-600">$125,000</p>
-                <p className="mt-2 text-gray-500">This month's total revenue from all sales.</p>
-              </CardContent>
+              <GetData/>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>New Customers</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-4xl font-bold text-green-600">1,250</p>
-                <p className="mt-2 text-gray-500">New customers acquired this month.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Pending Orders</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-4xl font-bold text-green-600">375</p>
-                <p className="mt-2 text-gray-500">Orders that are currently awaiting fulfillment.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Top Selling Products</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Widget A</h4>
-                      <p className="text-gray-500">Category X</p>
-                    </div>
-                    <p className="font-bold text-green-600">1,250 units</p>
-                  </li>
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Gadget B</h4>
-                      <p className="text-gray-500">Category Y</p>
-                    </div>
-                    <p className="font-bold text-green-600">950 units</p>
-                  </li>
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Thingamajig C</h4>
-                      <p className="text-gray-500">Category Z</p>
-                    </div>
-                    <p className="font-bold text-green-600">750 units</p>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Customer Satisfaction</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-4xl font-bold text-green-600">4.8/5</p>
-                <p className="mt-2 text-gray-500">Average customer satisfaction rating.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Inventory Overview</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Widget A</h4>
-                      <p className="text-gray-500">Category X</p>
-                    </div>
-                    <p className="font-bold text-green-600">2,500 in stock</p>
-                  </li>
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Gadget B</h4>
-                      <p className="text-gray-500">Category Y</p>
-                    </div>
-                    <p className="font-bold text-green-600">1,750 in stock</p>
-                  </li>
-                  <li className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-medium">Thingamajig C</h4>
-                      <p className="text-gray-500">Category Z</p>
-                    </div>
-                    <p className="font-bold text-green-600">1,250 in stock</p>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+
           </div>
         </main>
       </div>
