@@ -5,6 +5,14 @@ import GetData from "./fetchdata"
 export default async function GetAll(){
     const issues = await queryDatabase();
     //console.log(issues)
+
+    // Check if the response is an instance of NextResponse
+    if (issues instanceof NextResponse) {
+        // Handle the error or return some appropriate JSX
+        console.error('Failed to fetch data:', issues.json());
+        return <p>Error fetching data.</p>;
+    }
+
     const rows = issues.rows;
     console.log(rows)
     const listIssues = rows.map((item) => (
