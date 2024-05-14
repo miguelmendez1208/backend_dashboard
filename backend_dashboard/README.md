@@ -2,6 +2,16 @@
 
 Make sure you disable cache! Using Bu you shouldn't need to load the environment variables, but incase you're using node, make sure to load the environment variables.
 
+Email me for environment variables.
+
+To run:
+```bash
+cd frontend_support
+bun next dev
+```
+open on localhost:3000
+
+# Boiler plate readme
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
