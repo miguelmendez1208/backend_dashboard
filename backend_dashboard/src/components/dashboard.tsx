@@ -38,7 +38,7 @@ export default function Component() {
               href="#"
             >
               <HomeIcon className="h-5 w-5" />
-              Dashboard
+              Dashboard            
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-50"
@@ -65,7 +65,7 @@ export default function Component() {
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-50"
               href="#"
             >
-              <SettingsIcon className="h-5 w-5" />
+              <SettingsIcon />
               Settings
             </Link>
           </nav>
