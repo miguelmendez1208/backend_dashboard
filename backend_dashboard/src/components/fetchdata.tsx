@@ -10,7 +10,8 @@ export default function GetData({ ID = "b14e4f71-73d9-40ea-8e5c-c3b7917054ed", N
 
     const handleUpdateStatus = async () => {
         try {
-            const apiUrl = `${process.env.API_URL}?id=${ID}&status=${newStatus}`;
+
+            const apiUrl = `https://backend-dashboard-tau.vercel.app/api/updateStatus?id=${ID}&status=${newStatus}`;
             const response = await fetch(apiUrl)
 
             if (!response.ok) {
