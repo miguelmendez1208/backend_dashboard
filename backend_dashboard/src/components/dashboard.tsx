@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import GetData from "./fetchdata"
+import GetAll from "./getAll"
 
 export default function Component() {
   return (
@@ -71,9 +72,9 @@ export default function Component() {
         </div>
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card>
-              <GetData ID="123456" Name="JohnDoe" Email="john@example.com" Description="Slow login" Status="new"/>
-            </Card>
+
+              <GetAll />
+            
 
           </div>
         </main>

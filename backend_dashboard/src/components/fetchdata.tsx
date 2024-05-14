@@ -4,22 +4,14 @@ import { Button } from "@/components/ui/button"
 import { useState } from "react";
 
 
-export default function GetData({ ID = "123456", Name = "John Doe", Email = "john@example.com", Description = "Login doesn't work.", Status = "new" }) {
+export default function GetData({ ID = "b14e4f71-73d9-40ea-8e5c-c3b7917054ed", Name = "Miguel", Email = "migmendez@dallasisd.org", Description = "Broken Button", Status = "New" }) {
     const [newStatus, setNewStatus] = useState(Status);
     const [status, setStatus] = useState(Status);
 
     const handleUpdateStatus = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/updateStatus', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    id: ID,
-                    status: newStatus
-                })
-            });
+            const apiUrl = `http://localhost:3000/api/updateStatus?id=${ID}&status=${newStatus}`;
+            const response = await fetch(apiUrl)
 
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -27,7 +19,7 @@ export default function GetData({ ID = "123456", Name = "John Doe", Email = "joh
 
             const data = await response.json();
             console.log('Update successful:', data);
-            setStatus(data.res.status);
+            setStatus(data.status);
         } catch (error) {
             console.error('Failed to update:', error);
         }
