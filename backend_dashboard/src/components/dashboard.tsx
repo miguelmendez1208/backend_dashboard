@@ -1,8 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/rcyJNDpFI0I
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+
 import Link from "next/link"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import GetData from "./fetchdata"
@@ -10,7 +6,7 @@ import GetData from "./fetchdata"
 export default function Component() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="flex h-16 items-center border-b bg-gray-900 px-6">
+      <header className="flex h-16 items-center border-b bg-gray-800 px-6">
         <Link className="flex items-center gap-2" href="#">
           <MountainIcon className="h-6 w-6 text-white" />
           <span className="text-lg font-semibold text-white">Acme Inc</span>
@@ -76,7 +72,7 @@ export default function Component() {
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card>
-              <GetData/>
+              <GetData ID="123456" Name="JohnDoe" Email="john@example.com" Description="Slow login" Status="new"/>
             </Card>
 
           </div>
