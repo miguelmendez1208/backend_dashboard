@@ -1,7 +1,5 @@
 
 import Link from "next/link"
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
-import GetData from "./fetchdata"
 import GetAll from "./getAll"
 
 export default function Component() {
@@ -38,7 +36,7 @@ export default function Component() {
               href="#"
             >
               <HomeIcon className="h-5 w-5" />
-              Dashboard            
+              Dashboard
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-50"
@@ -72,10 +70,7 @@ export default function Component() {
         </div>
         <main className="flex-1 p-6">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-              <GetAll />
-            
-
+            <GetAll />
           </div>
         </main>
       </div>
@@ -83,7 +78,7 @@ export default function Component() {
   )
 }
 
-function HomeIcon(props:any) {
+function HomeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -104,7 +99,7 @@ function HomeIcon(props:any) {
 }
 
 
-function MountainIcon(props:any) {
+function MountainIcon(props: any) {
   return (
     <svg
       {...props}
@@ -124,7 +119,7 @@ function MountainIcon(props:any) {
 }
 
 
-function PackageIcon(props:any) {
+function PackageIcon(props: any) {
   return (
     <svg
       {...props}
@@ -147,7 +142,7 @@ function PackageIcon(props:any) {
 }
 
 
-function SettingsIcon(props:any) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}
@@ -168,7 +163,7 @@ function SettingsIcon(props:any) {
 }
 
 
-function ShoppingCartIcon(props:any) {
+function ShoppingCartIcon(props: any) {
   return (
     <svg
       {...props}
@@ -190,7 +185,7 @@ function ShoppingCartIcon(props:any) {
 }
 
 
-function UsersIcon(props:any) {
+function UsersIcon(props: any) {
   return (
     <svg
       {...props}

@@ -8,7 +8,7 @@ export default async function GetAll(){
     const rows = issues.rows;
     console.log(rows)
     const listIssues = rows.map((item) => (
-        <GetData ID={item.id} Name={item.name} Email={item.email} Description={item.description} Status={item.status} />
+        <GetData key={item.id} ID={item.id} Name={item.name} Email={item.email} Description={item.description} Status={item.status} />
     ));
 
     return (
