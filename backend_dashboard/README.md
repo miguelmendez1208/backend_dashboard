@@ -6,7 +6,7 @@ Email me for environment variables.
 
 To run:
 ```bash
-cd frontend_support
+cd backend_dashboard
 bun next dev
 ```
 open on localhost:3000
